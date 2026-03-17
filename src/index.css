@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Trebuchet MS', 'Avenir Next', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #422006;
+  background:
+    radial-gradient(circle at top, rgba(251, 191, 36, 0.32), transparent 28%),
+    linear-gradient(180deg, #fff7ed 0%, #fffbeb 54%, #fed7aa 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, rgba(251, 191, 36, 0.32), transparent 28%),
+    linear-gradient(180deg, #fff7ed 0%, #fffbeb 54%, #fed7aa 100%);
+}
+
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  color: #422006;
+}
+
+body::before,
+body::after {
+  position: fixed;
+  z-index: -1;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 9999px;
+  content: '';
+  filter: blur(18px);
+}
+
+body::before {
+  top: 2rem;
+  right: -2rem;
+  background: rgba(251, 146, 60, 0.2);
+}
+
+body::after {
+  bottom: 5rem;
+  left: -2rem;
+  background: rgba(250, 204, 21, 0.22);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(251, 191, 36, 0.35);
+}
